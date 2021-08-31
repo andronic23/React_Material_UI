@@ -117,7 +117,7 @@ function App(props) {
             </div>
 
               <IconButton
-                edge="start"
+                edge="end"
                 className={classes.menuButton}
                 color="inherit"
                 aria-label="open drawer"
