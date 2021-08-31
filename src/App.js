@@ -121,18 +121,19 @@ function App(props) {
                 className={classes.menuButton}
                 color="inherit"
                 aria-label="open drawer"
-                aria-controls="fade-menu" aria-haspopup="true" onClick={handleClick} >
-                  
+                aria-controls="fade-menu" 
+                aria-haspopup="true" 
+                onClick={handleClick} >
                   <ShopIcon />
-
               </IconButton>
+          
               <Menu
                   id="fade-menu"
                   anchorEl={anchorEl}
                   keepMounted
-                  open={open}
+                  open={Boolean(anchorEl)}
                   onClose={handleClose}
-                  TransitionComponent={Fade}>
+               >
 
                   <MenuItem onClick={handleClose}>Profile</MenuItem>
                   <MenuItem onClick={handleClose}>My account</MenuItem>
